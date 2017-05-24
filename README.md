@@ -1,5 +1,7 @@
 # linq.js [![Build Status](https://api.travis-ci.org/SvSchmidt/linqjs.png)](https://travis-ci.org/SvSchmidt/linqjs) [![Coverage Status](https://coveralls.io/repos/github/SvSchmidt/linqjs/badge.svg)](https://coveralls.io/github/SvSchmidt/linqjs)
 
+Foo
+
 > Perform queries on collections in the manner of C#s System.Linq in JavaScript
 
 Collections of values are common objects to deal with in JavaScript. The most widespread Collection is by far the Array, allowing us to store data in an easy manner: `[1, 2, 'hello world', new Date()]`. Now, with ES6 we got the _iterable_ interface, which enables even Strings to get iterated over (interpreted as an array of chars). Additionally, we were gifted with new ways of storing data: _Maps_ and _Sets_ are two of them.
@@ -75,7 +77,7 @@ This will yield
   - json serialization of collections is performed,
   - `reverse` is used (sadly it has to evaluate the collection),
   - ordering is performed (the moment the first value is accessed from the ordered collection).
- 
+
   For getting a idea of what that means and why it's useful, have a look at the example
 
   ```js
@@ -101,7 +103,7 @@ The code will output `[0, 2, 4, 6, 8]`, but, what's more interesting, will only 
   Collection.from(naturalNumbers).Take(5).ToArray()
   // -> [0, 1, 2, 3, 4]
   ```
-  
+
 - *Short-handed syntax for well-known iterables*
   ```js
   const numbers = [1, 2, 3, 4, 5]
@@ -125,7 +127,7 @@ The code will output `[0, 2, 4, 6, 8]`, but, what's more interesting, will only 
   - ...
 
 - *About 15kB minified, 5kB gzipped*
-  
+
 ## API
 
 linq.js supports three szenarios for loading and using the module.
